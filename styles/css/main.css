@@ -1,7 +1,8 @@
 body {
   font-family: "Lato", sans-serif;
   color: #FFF;
-  background-color: #13042B; }
+  background-color: #13042B;
+  /*background-color: #eee;*/ }
 
 .container-fluid {
   height: 2000px;
@@ -23,12 +24,13 @@ body {
   height: 100%;
   max-height: 700px;
   width: 100%;
-  border: 3px dotted red; }
+  /*border: 3px dotted red;*/
+  margin: auto; }
 
 .header {
   height: 300px;
   margin-top: 10%;
-  border: 2px solid green;
+  /*border: 2px solid green;*/
   font-size: 3em;
   text-align: center; }
 
@@ -39,19 +41,19 @@ body {
   border-radius: 50%; }
 
 .name {
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
   text-align: center;
   height: 100%; }
 
 .title {
-  border: 1px dotted white;
+  /*border: 1px dotted white;*/
   font-size: 3em;
   text-align: center;
   margin-bottom: 0;
   line-height: 100px; }
 
 .subtitle {
-  border: 1px dotted white;
+  /*border: 1px dotted white;*/
   font-size: .75em;
   text-align: right;
   width: 75%; }
@@ -62,7 +64,11 @@ body {
   width: 100%;
   max-width: 1000px;
   max-height: 700px;
-  border: 2px solid blue; }
+  /*border: 4px solid blue;*/
+  margin: auto;
+  position: relative;
+  clear: both;
+  /*max-width: 62.5em;*/ }
 
 .projectsQuote {
   /*border: 1px dotted red;*/
@@ -74,35 +80,43 @@ body {
   border-bottom: 2px solid grey; }
 
 .projectsTitle {
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
   font-size: 3em;
   text-align: center;
   height: 100px; }
 
 .projectsCarousel {
-  border: 1px dotted white;
+  /*border: 4px dotted white;*/
   height: 100%;
   max-height: 500px;
   width: 100%; }
 
-.carousel-indicators {
-  border: 1px dotted white;
-  height: 100%; }
-
-.carousel-inner {
-  border: 1px dotted white;
-  height: 100%; }
-
 .item {
-  border: 1px dotted white;
+  /*border: 2px dotted yellow;*/
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+.project1 {
+  /*border: 4px dotted cyan;*/
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+.project-img {
+  /*border: 2px dotted green;*/ }
+
+.project-caption {
+  /*border: 2px dotted orange;*/
   height: 100%; }
 
-.carousel-caption {
-  border: 1px dotted white;
-  height: 100%; }
+.project-caption > h2 {
+  /*border: 1px dotted green;*/ }
 
-.carousel-control {
-  border: 1px dotted white;
-  height: 100%; }
+.project-caption > h4 {
+  /*border: 1px dotted red;*/ }
+
+.project-caption > p {
+  /*border: 1px dotted blue;*/ }
 
 /*# sourceMappingURL=main.css.map */
