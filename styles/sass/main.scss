@@ -24,6 +24,7 @@ body{
 	height: 100%;
 	width: 15%;
 	border:3px dotted pink;
+	position: fixed;
 }
 
 .navInfo{
@@ -31,6 +32,14 @@ body{
 	width: 100%;
 	border:2px solid green;
 }
+.btn-primary, .btn-primary:hover, 
+.btn:focus,.btn:active:focus, .btn.active:focus{
+	background-color: $primary-bg;
+    border-color: $primary-bg;
+    outline: none !important;
+}
+
+
 
 /* // name title // */ 
 .welcomeDiv{
@@ -85,6 +94,29 @@ body{
    	background-color: $secondary-bg;
     /*max-width: 62.5em;*/
 }
+.leftArrow, .rightArrow{
+	/*border: 4px dotted blue;*/
+	height: 100%;
+	position: absolute;
+	
+}
+.rightArrow{
+	right: 0;
+}
+.glyphicon-chevron-left:hover, .glyphicon-chevron-right:hover {
+	background-color: $secondary-bg;
+	opacity: 1;
+}
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+	/*border: 4px dotted white;*/
+	top: 50%;
+	font-size: 50px;
+	border-radius: 50%;
+	opacity: 0.1;
+}
+.glyphicon-chevron-right{
+	float: right;
+}
 .centeredProjects{
 	margin: auto;
 	height: 100%;
@@ -112,7 +144,7 @@ body{
   animation: type2 8s steps(60, end);
 }
 
-span{
+.blink{
   animation: blink 1s infinite;
 }
 
@@ -184,10 +216,55 @@ span{
 }
 
 
+/* ///////// sidebar //////////*/
+menu {
+	border: 2px dotted white;
+	background-color:cyan;
+}
 
 
 
+/*.sidebar {
+    position : absolute;
+    top : 0;
+    left : -160px;;
+    transition : 100ms left;
+}
+#navigation-toggle {
+        position : absolute;
+        left : 160px;
+        background : rgba(3,159,244,.95);
+        color : white;
+        text-decoration : none;
+        padding : 20px;
+}
+.show {
+    left : 0;
+}
+.navigation {
+    list-style : none;
+    padding : 0;
+    margin : 0;
+}
+.navigation-items a {
+    display : block;
+    background-color : #444;
+    color : white;
+    line-height : 2em;
+    text-decoration : none;
+    padding : 10px 30px;
+    width : 100px;
 
+}
+.navigation-items a:hover {
+    background-color : #222;
+}
+
+
+.activeClass{
+	background-color: $secondary-bg;
+}
+*/
 
 
 

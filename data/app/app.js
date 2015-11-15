@@ -1,9 +1,7 @@
-var app = angular.module("pWebsite", ['ngRoute','ui.bootstrap']);
+var app = angular.module("pWebsite", ['ngRoute','angular.filter','ui.bootstrap']);
 
 
 
-
-   
 
 
 
@@ -14,10 +12,10 @@ app.config(['$routeProvider',
         templateUrl : "data/partials/main.html",
         controller : "MainCtrl"
       })
-      // .when('/oh',{
-      //   templateUrl : "partials/oh.html",
-      //   controller : "ohCtrl"
-      // })
+      .when('/sidebar',{
+        templateUrl : "data/partials/sidebar.html",
+        controller : "SidebarController"
+      })
       // .when('/presentation',{
       //   templateUrl : "partials/presentation.html",
       //   controller : "ohCtrl"

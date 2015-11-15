@@ -1,0 +1,21 @@
+<div class="row item active"ng-controller="projectsCtrl as project">
+	<div class="project1">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 project-img">
+			<img ng-src="{{currentProject.Img}}" alt="..." height="100%" width="100%">
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 project-Info">
+			<div class="row">
+				<div class="projectName">
+					<h1>{{project.currentProject.Name}}</h1>
+				</div>
+				<div class="projectSkills">
+					<h4>Skills + Role</h4>
+					<p>{{project.currentProject.Skills}}</p>
+				</div>
+				<div class="projectDescription">
+					<p>{{project.currentProject.Description}}</p>
+				</div>
+			</div>
+		</div>
+	</div> 			
+</div>
