@@ -23,25 +23,19 @@ app.controller("projectsCtrl",
   			}
   	];
 
-  	//console.log($scope.projectContent);
   
   var projectIndex = 0;
 
   $scope.currentProject = $scope.projectContent[projectIndex];
-  console.log($scope.currentProject);
+
   $scope.nextProject = function() {
-        console.log('click');
       projectIndex = projectIndex+1;
-        console.log("NextprojectIndex", projectIndex);
       this.currentProject = $scope.projectContent[projectIndex];
-        console.log("next current", this.currentProject);
+        
    };
   $scope.prevProject = function() {
-    console.log('click');
      projectIndex = projectIndex-1;
-     console.log("PrevprojectIndex", projectIndex);
      this.currentProject = $scope.projectContent[projectIndex];
-     console.log("previous current", this.currentProject);
    };
 
 

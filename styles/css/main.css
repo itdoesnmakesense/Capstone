@@ -2,6 +2,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #FFF;
   background-color: #13042B;
+  overflow-x: hidden;
   /*background-color: #eee;*/ }
 
 .container-fluid {

@@ -12,6 +12,7 @@ body{
 	font-family: $font-stack;
 	color: $primary-text-color;
 	background-color: $primary-bg;
+	overflow-x: hidden;
 	/*background-color: #eee;*/
 }
 
