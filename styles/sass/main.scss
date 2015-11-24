@@ -25,7 +25,11 @@ body{
 	height: 100%;
 	width: 15%;
 	border:3px dotted pink;
-	position: fixed;
+	position: relative;
+}
+.nav:hover{
+	transition: 1s;
+    left: 0;
 }
 
 .navInfo{
@@ -39,16 +43,27 @@ body{
     border-color: $primary-bg;
     outline: none !important;
 }
+.sidebarDiv{
+	border: 2px solid green;
 
+}
 
 
 /* // name title // */ 
+.main {
+	height: 100%;
+	max-height: 700px;
+	width: 100%;
+	/*border: 3px dotted blue;*/
+	padding: 0;	
+}
 .welcomeDiv{
 	height: 100%;
 	max-height: 700px;
 	width: 100%;
-	/*border: 3px dotted red;*/
+	/*border: 2px dotted red;*/
 	margin:auto;
+	position: absolute;
 }
 .header{
 	height: 300px;
@@ -69,12 +84,17 @@ body{
 	text-align: center;
 	height: 100%;
 }
+
 .title{
 	/*border: 1px dotted white;*/
 	font-size: $primary-font-size;
 	text-align: center;	
 	margin-bottom:0;
 	line-height: 100px;
+}
+.title:hover {
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+	/*font-size: 3.2em;*/
 }
 .subtitle{
 	/*border: 1px dotted white;*/
@@ -93,6 +113,7 @@ body{
    	position: relative;
    	clear: both;
    	background-color: $secondary-bg;
+   	/*top: 480px;*/
     /*max-width: 62.5em;*/
 }
 .leftArrow, .rightArrow{
@@ -136,32 +157,10 @@ body{
     font-weight: 100;
     font-family: Georgia;
     white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
-}
+  	overflow: hidden;
+  	width: 30em;
+ }
 
-.porjectsQuotes > p:nth-child(2){
-  animation: type2 8s steps(60, end);
-}
-
-.blink{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
 
 .borderbreak{
 	border-bottom: 2px solid grey;
@@ -222,6 +221,102 @@ menu {
 	border: 2px dotted white;
 	background-color:cyan;
 }
+
+/* ///////// footer //////////*/
+.footer{
+	/*border: 4px dotted white;*/
+	height: 100%;
+	max-height: 250px;
+	/*margin-top: 150px;*/
+}
+.footerSpace{
+	/*border: 2px dotted white;*/
+	height: 100%;
+	max-height: 550px;
+}
+.footerTop{
+	/*border: 4px dotted red;*/
+	height: 440px;
+	margin-bottom: 150px;
+}
+.myImg{
+	/*border: 1px dotted red;*/
+
+}
+.stoicImg{
+	/*border: 1px dotted red;*/
+	height: 379px;
+	width: 380px;
+	border-radius: 50%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.myInfo{
+	/*border: 1px dotted blue;*/
+	height: 380px;
+    padding-right: 150px;
+    text-align: justify;
+}
+.wordcloud{
+	margin-top:50px;
+	line-height: 15px;
+}
+
+.texas{
+	font-size: 20px;
+}
+.gde{
+	font-size: 15px;
+}
+.food{
+	font-size: 15px;
+}
+.space{
+	font-size: 30px;
+}
+.human{
+	font-size: 22px;
+}
+.life{
+	font-size: 15px;
+}
+
+.footerList {
+	/*border: 2px dotted yellow;*/
+	background-color: $third-bg;
+	height: 100px;
+	border-top: 2px solid rgba(19, 4, 43, 0.38);
+}
+.links{
+	/*border: 1px dotted red;*/
+	height: 100%;
+}
+
+.links > a{
+	/*border: 1px dotted white;*/
+	color: white;
+	float:right;
+	margin: 5%;
+}
+.links > a:hover{
+	text-decoration: none !important;
+	/*color: #eee;*/
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+.copyright{
+	/*border: 1px dotted blue;*/
+	height: 100%;
+}
+.copyright > p{
+	margin: 5% 25%;
+    text-align: center;
+}
+
+
+
+
+
 
 
 
