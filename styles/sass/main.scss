@@ -3,7 +3,7 @@ $primary-text-color: #FFF;
 $secondary-text-color: #F24B4B;
 $third--text-color: #4ABFCB;
 $primary-bg: #13042B;
-$secondary-bg: #F24B4B;
+$projects-bg: #F24B4B;
 $third-bg: #6BD6F1;
 $primary-font-size: 3em;
 
@@ -112,7 +112,7 @@ body{
 	/*border: 4px solid blue;*/
    	position: relative;
    	clear: both;
-   	background-color: $secondary-bg;
+   	background-color: $projects-bg;
 }
 
 .leftArrow, .rightArrow{
@@ -133,7 +133,7 @@ body{
 	opacity: 0.1;
 
 	&:hover {
-	background-color: $secondary-bg;
+	background-color: transparent;
 	color: $third-bg;
 	opacity: 1;
 	}
@@ -230,16 +230,16 @@ menu {
 }
 .skillsTitle{
 	/*border: 1px dotted white;*/
-		&:hover{
+	/*	&:hover{
 			text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
-		}
+		}*/
 }
 .skillsItems{
 	/*border: 1px dotted white;*/
-	max-height: 475px;
+	height: 475px;
 
 }
-.fullStack{
+.fullStack, .mobile, .userX, .tools{
 	/*border: 1px dotted red;*/
 	height: 475px;
 }
@@ -258,25 +258,12 @@ menu {
 	}
 	&:hover{
 		background-color: $third-bg;
-		transform: scale(1.2, 1.2);
+		transform: scale(1.1, 1.1);
 	}
 	&:hover:after {
   		opacity: 1;
 	}
 }
-.mobile{
-	/*border: 1px dotted red;*/
-	height: 475px;
-}
-.userX{
-	/*border: 1px dotted red;*/
-	height: 475px;
-}
-.tools{
-	/*border: 1px dotted red;*/
-	height: 475px;
-}
-
 
 
 
@@ -367,7 +354,7 @@ menu {
 	&:hover{
 	text-decoration: none !important;
 	/*color: #eee;*/
-	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+	/*text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);*/
 	}
 }
 .copyright{
@@ -424,7 +411,7 @@ menu {
 
 
 .activeClass{
-	background-color: $secondary-bg;
+	background-color: $projects-bg;
 }
 */
 
