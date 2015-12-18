@@ -4,8 +4,8 @@ $secondary-text-color: #F24B4B;
 $third--text-color: #4ABFCB;
 $primary-bg: #13042B;
 $projects-bg: #F24B4B;
-$third-bg: #6BD6F1;
-$primary-font-size: 3em;
+$third-bg: darken(#BDD4DE, 30%);
+$primary-font-size: 2.7em;
 
 
 body{
@@ -83,25 +83,24 @@ body{
 	/*border: 1px dotted red;*/
 	text-align: center;
 	height: 100%;
+	margin-top:75px;
 }
 
 .title{
 	/*border: 1px dotted white;*/
 	font-size: $primary-font-size;
-	text-align: center;	
+	text-align: right;	
 	margin-bottom:0;
-	line-height: 100px;
-	
-	&:hover {
-	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
-	}	
+	line-height: 110px;
+	padding: 0;
 }
 .subtitle{
 	/*border: 1px dotted white;*/
-	font-size: .75em;
+	font-size: .9em;
 	text-align: right;	
-	width: 75%;
-	color: $third-bg;
+	width: 100%;
+	color: #6BD6F1;
+	padding:0;
 }
 
 /* //////about section ///////*/
@@ -149,19 +148,7 @@ body{
     max-width: 1000px;
     /*border: 2px solid white;*/
 }
-.projectsQuote{
-	/*border: 1px dotted red;*/
-	font-size: 2.5em;
-	text-align: center;
-	height: 75px;
-	margin-top: 50px;
-	font-style: italic;
-    font-weight: 100;
-    font-family: Georgia;
-    white-space: nowrap;
-  	overflow: hidden;
-  	width: 30em;
- }
+
 .borderbreak{
 	border-bottom: 2px solid grey;
 	width: 500px;
@@ -172,6 +159,7 @@ body{
 	font-size: 3em;
 	text-align: center;
 	height: 100px;
+	margin-top: 50px;
 }
 .projectsCarousel{
 	/*border: 4px dotted white;*/
@@ -201,56 +189,46 @@ body{
 	margin-left:10px;
 
 }
-.projectName > h1 {
-	/*border: 1px dotted green;*/
-	/*margin-top:58px;*/
-}
-.projectSkills > h4 {
-	/*border: 1px dotted red;*/
-}
-.projectSkills > p {
-	/*border: 1px dotted blue;*/
-}
-.projectDescription > p{
-	/*border: 1px dotted blue;*/
+.projectName {
+	margin-top: 50px;
 }
 
-
-/* ///////// sidebar //////////*/
-menu {
-	border: 2px dotted white;
-	background-color:cyan;
+.projectDescription{
+	font-size: 20px;
 }
+
 
 /* ///////// skillContent //////////*/
 .skillsDiv{
 	/*border: 2px dotted white;*/
-	height: 550px;
-	margin-top: 150px;
+	height: 650px;
+	margin-top: 50px;
+	.row {
+		height: 100%;
+	}
+	.skillsItems{
+		height: 550px;
+	}
 }
-.skillsTitle{
-	/*border: 1px dotted white;*/
-	/*	&:hover{
-			text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
-		}*/
-}
-.skillsItems{
-	/*border: 1px dotted white;*/
-	height: 475px;
 
-}
 .fullStack, .mobile, .userX, .tools{
-	/*border: 1px dotted red;*/
-	height: 475px;
-}
+	height: 60%;
 
-.boxy{
+	.boxy{
 	/*border: 1px dotted blue;*/
+	h2{
+		font-size: 29px;
+		text-align: left;
+		padding-left: 5px;
+	}
 	height: 100%;
+	padding: 0;
+	font-size: 18px;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   	transition: all 0.3s ease-in-out;
 	ul {
 		list-style: none !important;
+		padding: 0 0 0 20;
 	}
 	&:after{
 		box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -258,11 +236,16 @@ menu {
 	}
 	&:hover{
 		background-color: $third-bg;
-		transform: scale(1.1, 1.1);
+		transform: scale(1, 1);
 	}
 	&:hover:after {
   		opacity: 1;
 	}
+	li{
+		line-height: 1.3;
+	}
+}
+
 }
 
 
@@ -284,13 +267,14 @@ menu {
 .footerSpace{
 	/*border: 2px dotted white;*/
 	height: 100%;
-	max-height: 750px;
+	max-height: 650px;
 }
 .footerTop{
 	/*border: 4px dotted red;*/
-	height: 440px;
-	margin-bottom: 150px;
-	margin-top: 150px;
+	height: 650px;
+	margin-bottom: 0;
+	/*margin-top: 50px;*/
+	background: $third-bg;
 }
 .myImg{
 	/*border: 1px dotted red;*/
@@ -303,41 +287,23 @@ menu {
 	border-radius: 50%;
 	display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-top: 25%;
 }
 .myInfo{
 	/*border: 1px dotted blue;*/
 	height: 380px;
     padding-right: 150px;
     text-align: justify;
-}
-.wordcloud{
-	margin-top:50px;
-	line-height: 15px;
+    margin-top: 15%;
+    font-size: 20px;
 }
 
-.texas{
-	font-size: 25px;
-}
-.gde{
-	font-size: 15px;
-}
-.food{
-	font-size: 16px;
-}
-.space{
-	font-size: 30px;
-}
-.human{
-	font-size: 22px;
-}
-.life{
-	font-size: 18px;
-}
+
 
 .footerList {
 	/*border: 2px dotted yellow;*/
-	background-color: $third-bg;
+	background-color: $primary-bg;
 	height: 100px;
 	border-top: 2px solid rgba(19, 4, 43, 0.38);
 }

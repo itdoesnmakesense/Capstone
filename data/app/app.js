@@ -12,14 +12,7 @@ app.config(['$routeProvider',
         templateUrl : "data/partials/main.html",
         controller : "MainCtrl"
       })
-      .when('/sidebar',{
-        templateUrl : "data/partials/sidebar.html",
-        controller : "SidebarController"
-      })
-      // .when('/presentation',{
-      //   templateUrl : "partials/presentation.html",
-      //   controller : "ohCtrl"
-      // })
+  
       //  .when('/howBout',{
       //   templateUrl : "partials/howBout.html",
       //   controller : "howBoutCtrl"
