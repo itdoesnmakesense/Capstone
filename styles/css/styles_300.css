@@ -24,35 +24,6 @@ body {
   height: 2000px;
   /*border: 3px dotted white;*/ }
 
-/* // side bar // */
-/*.nav{
-	height: 100%;
-	width: 15%;
-	border:3px dotted pink;
-	position: relative;
-
-	&:hover {
-		transition: 1s;
-   		left: 0;
-	}
-}
-
-.navInfo{
-	height: 100%;
-	width: 100%;
-	border:2px solid green;
-}
-.btn-primary, .btn-primary:hover, 
-.btn:focus,.btn:active:focus, .btn.active:focus{
-	background-color: $primary-bg;
-    border-color: $primary-bg;
-    outline: none !important;
-}
-.sidebarDiv{
-	border: 2px solid green;
-}
-
-*/
 /* // name title // */
 .main {
   height: 100%;
@@ -61,21 +32,6 @@ body {
   /*border: 3px dotted blue;*/
   padding: 0; }
 
-/*.welcomeDiv{
-	height: 100%;
-	max-height: 700px;
-	width: 100%;
-	border: 2px dotted red;
-	margin:auto;
-	position: absolute;
-}*/
-/*.header{
-	height: 300px;
-	margin-top: 10%;
-	border: 2px solid green;
-	font-size: $primary-font-size;
-	text-align: center;
-}*/
 .profileImgDiv {
   /*border: 1px dotted white;*/
   width: 100%;
@@ -84,20 +40,15 @@ body {
   /*background-color: rgba(19,4,43,.3);*/ }
 
 .profilePic {
-  /*border: 1px dotted yellow;*/
   max-width: 100%;
   height: auto;
   width: 437.5px;
   display: inline-block; }
 
 .name {
-  /*border: 1px dotted red;*/
   text-align: center;
   width: 100%;
-  z-index: 1;
-  /*margin-top:75px;*/
-  /*top: 450;*/
-  /*background-color: rgba(19,4,43,.3);*/ }
+  z-index: 1; }
 
 .title {
   /*border: 1px dotted white;*/
