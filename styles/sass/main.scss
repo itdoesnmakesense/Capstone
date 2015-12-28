@@ -7,6 +7,24 @@ $projects-bg: #F24B4B;
 $third-bg: darken(#BDD4DE, 30%);
 $primary-font-size: 2.7em;
 
+/* Styles to make skrollable work. Copy these to your file. */
+   .skrollable {
+      position:fixed;
+      /*z-index:100;*/
+   }
+   .skrollr-mobile .skrollable {
+      position:absolute;
+   }
+   .skrollable .skrollable {
+      position:absolute;
+   }
+   
+   .skrollable .skrollable .skrollable {
+      position:static;
+   }
+/* End skrollable styles */
+
+
 
 body{
 	font-family: $font-stack;
@@ -21,7 +39,7 @@ body{
 	/*border: 3px dotted white;*/
 }
 /* // side bar // */
-.nav{
+/*.nav{
 	height: 100%;
 	width: 15%;
 	border:3px dotted pink;
@@ -48,7 +66,7 @@ body{
 	border: 2px solid green;
 }
 
-
+*/
 /* // name title // */ 
 .main {
 	height: 100%;
@@ -57,49 +75,63 @@ body{
 	/*border: 3px dotted blue;*/
 	padding: 0;	
 }
-.welcomeDiv{
+/*.welcomeDiv{
 	height: 100%;
 	max-height: 700px;
 	width: 100%;
-	/*border: 2px dotted red;*/
+	border: 2px dotted red;
 	margin:auto;
 	position: absolute;
-}
-.header{
+}*/
+/*.header{
 	height: 300px;
 	margin-top: 10%;
-	/*border: 2px solid green;*/
+	border: 2px solid green;
 	font-size: $primary-font-size;
 	text-align: center;
-}
+}*/
 .profileImgDiv{
 	/*border: 1px dotted white;*/
+	width: 100%;
+  	text-align: center;
+  	position: fixed;
+  	/*background-color: rgba(19,4,43,.3);*/
 }
 .profilePic{
-	border-radius: 50%;
+	/*border: 1px dotted yellow;*/
+	max-width: 100%;
+    height: auto;
+    width: 437.5px;
+    display: inline-block;
+
 }
 
 .name{
 	/*border: 1px dotted red;*/
 	text-align: center;
-	height: 100%;
-	margin-top:75px;
+	width: 100%;
+	z-index: 1;
+	/*margin-top:75px;*/
+	/*top: 450;*/
+	/*background-color: rgba(19,4,43,.3);*/
 }
 
 .title{
 	/*border: 1px dotted white;*/
-	font-size: $primary-font-size;
-	text-align: right;	
+	font-size: 100px;
+	text-align: center;	
 	margin-bottom:0;
 	line-height: 110px;
 	padding: 0;
+	font-weight: 100;
+	text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
 }
 .subtitle{
 	/*border: 1px dotted white;*/
-	font-size: .9em;
-	text-align: right;	
+	font-size: 30px;
+	text-align: center;	
 	width: 100%;
-	color: #6BD6F1;
+	color: #BDD4DE;
 	padding:0;
 }
 
@@ -114,88 +146,120 @@ body{
    	background-color: $projects-bg;
 }
 
-.leftArrow, .rightArrow{
-	/*border: 4px dotted blue;*/
-	height: 100%;
-	position: absolute;
-	
-}
-.rightArrow{
-	right: 0;
-}
-
-.glyphicon-chevron-left, .glyphicon-chevron-right{
-	/*border: 4px dotted white;*/
-	top: 50%;
-	font-size: 50px;
-	border-radius: 50%;
-	opacity: 0.1;
-
-	&:hover {
-	background-color: transparent;
-	color: $third-bg;
-	opacity: 1;
-	}
-}
-.glyphicon-chevron-right{
-	float: right;
-}
-.centeredProjects{
-	margin: auto;
-	height: 100%;
-	width: 100%;
-	max-height: 800px;
-    max-width: 1000px;
-    /*border: 2px solid white;*/
-}
-
-.borderbreak{
-	border-bottom: 2px solid grey;
-	width: 500px;
-	margin-left:25%;
-}
-.projectsTitle{
-	/*border: 1px dotted red;*/
-	font-size: 3em;
-	text-align: center;
-	height: 100px;
-	margin-top: 50px;
-}
-.projectsCarousel{
-	/*border: 4px dotted white;*/
-	height: 100%;
-	max-height:500px;
-	width:100%;
-}
 .item{
 	/*border: 2px dotted yellow;*/
 	height: 100%;
 	width: 100%;
 	margin:0;
-}
-.project1{
-	/*border: 4px dotted cyan;*/
-	height: 100%;
-	width: 100%;
-	margin:0;
-}
-.project-img{
-	/*border: 2px dotted green;*/
 	
 }
-.project-Info > .row{
-	/*border: 2px dotted orange;*/
-	height: 100%;
-	margin-left:10px;
 
+.borderbreak{
+	border-bottom: 2px solid #fff;
+	width: 500px;
+	margin: 0 auto;
 }
-.projectName {
+.projectsTitle{
+	/*border: 1px dotted blue;*/
+	font-size: 64px;
+	font-weight: 200;
+	text-align: center;
+	height: 100px;
 	margin-top: 50px;
 }
 
-.projectDescription{
-	font-size: 20px;
+.project1{
+	background-color: transparent;
+	height: 260px;
+	margin-top:150;
+	cursor: pointer;
+
 }
+
+.project-img{
+	height: 100%;
+	width: 100%;
+	border: 4px solid #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+	box-shadow: 0 2px 4px rgba(0,0,0,.3);
+	position:relative;
+	display:block;
+
+
+	/*&:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 12px 10px rgba(0,0,0,.2);
+
+		}*/
+}
+
+.project-Info{
+	height: 100%;
+	position:absolute;
+	top: 0;
+    left: 0;
+    text-align: center;
+    color: black;
+    display: block;
+
+	.infoRow{
+		margin: 0 auto;
+		height: 260px;
+		max-height: 260px;
+		overflow: hidden;
+		opacity: 0;
+		background-color: #6BD6F1;
+  		border-radius: 100%;
+  		transition: all 0.6s ease-in-out;	
+  		
+  		.projectContent{
+  			opacity:0;
+  		}
+	}
+}
+
+.infoRow:hover{
+	opacity: .9;
+	border-radius: 4px;
+	height: 260px;
+	margin: 0 0;
+	padding: 0 25;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+
+	.projectContent{
+		opacity: 1 !important;
+		-webkit-transition: all 0.5s linear;
+		-moz-transition: all 0.5s linear;
+		-o-transition: all 0.5s linear;
+		transition: all 0.5s linear;
+		transition-delay: .4s;
+
+			h1{
+				font-weight:600;
+				color:#fff;
+				text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+			}
+
+			p{
+				font-size: 14px;
+				font-weight: 300;
+
+				.glyphicon-wrench{
+					font-size: 10px;
+					font-weight: 200;
+				}
+			}
+			h5{
+				text-align: justify;
+			}
+		}
+}		
+
 
 
 /* ///////// skillContent //////////*/
@@ -268,6 +332,7 @@ body{
 	/*border: 2px dotted white;*/
 	height: 100%;
 	max-height: 650px;
+	background-color: $primary-bg;
 }
 .footerTop{
 	/*border: 4px dotted red;*/
