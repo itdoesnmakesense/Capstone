@@ -183,33 +183,46 @@ body {
   margin-top: 50px; }
   .skillsDiv .row {
     height: 100%; }
+  .skillsDiv .skillsTitle {
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center; }
   .skillsDiv .skillsItems {
-    height: 550px; }
+    /*border: 2px dotted yellow;*/
+    height: 550px;
+    margin-top: 50px;
+    padding: 0; }
 
 .fullStack, .mobile, .userX, .tools {
-  height: 60%; }
+  height: 60%;
+  /*border: 1px dotted red;*/ }
   .fullStack .boxy, .mobile .boxy, .userX .boxy, .tools .boxy {
-    /*border: 1px dotted blue;*/
+    /*border: 1px dotted white;*/
+    text-align: center;
     height: 100%;
     padding: 0;
     font-size: 18px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease-in-out; }
     .fullStack .boxy h2, .mobile .boxy h2, .userX .boxy h2, .tools .boxy h2 {
-      font-size: 29px;
-      text-align: left;
-      padding-left: 5px; }
+      /*border: 1px dotted green;*/
+      font-size: 29px; }
     .fullStack .boxy ul, .mobile .boxy ul, .userX .boxy ul, .tools .boxy ul {
+      /*border: 1px dotted yellow;*/
       list-style: none !important;
-      padding: 0 0 0 20; }
+      padding: 0 0 0 0; }
     .fullStack .boxy:after, .mobile .boxy:after, .userX .boxy:after, .tools .boxy:after {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       transition: opacity 0.3s ease-in-out; }
     .fullStack .boxy:hover, .mobile .boxy:hover, .userX .boxy:hover, .tools .boxy:hover {
       background-color: #5792ab;
       transform: scale(1, 1); }
+      .fullStack .boxy:hover h2, .mobile .boxy:hover h2, .userX .boxy:hover h2, .tools .boxy:hover h2 {
+        opacity: 1; }
     .fullStack .boxy:hover:after, .mobile .boxy:hover:after, .userX .boxy:hover:after, .tools .boxy:hover:after {
-      opacity: 1; }
+      opacity: 1;
+      transition: all 0.4s ease;
+      transition-delay: .2s; }
     .fullStack .boxy li, .mobile .boxy li, .userX .boxy li, .tools .boxy li {
       line-height: 1.3; }
 

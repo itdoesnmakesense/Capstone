@@ -235,30 +235,45 @@ body{
 	.row {
 		height: 100%;
 	}
+	.skillsTitle{
+		font-size: 64px;
+		font-weight: 400;
+		text-align: center;
+	}
 	.skillsItems{
+		/*border: 2px dotted yellow;*/
 		height: 550px;
+		margin-top:50px;
+		padding:0;
 	}
 }
 
 .fullStack, .mobile, .userX, .tools{
 	height: 60%;
+	/*border: 1px dotted red;*/
+	
 
 	.boxy{
-	/*border: 1px dotted blue;*/
+	/*border: 1px dotted white;*/
+	text-align: center;
+
 	h2{
+		/*border: 1px dotted green;*/
 		font-size: 29px;
-		text-align: left;
-		padding-left: 5px;
 	}
 	height: 100%;
 	padding: 0;
 	font-size: 18px;
+
 	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   	transition: all 0.3s ease-in-out;
 	ul {
+		/*border: 1px dotted yellow;*/
 		list-style: none !important;
-		padding: 0 0 0 20;
+		padding: 0 0 0 0;
+		
 	}
+	
 	&:after{
 		box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   		transition: opacity 0.3s ease-in-out;
@@ -266,13 +281,21 @@ body{
 	&:hover{
 		background-color: $third-bg;
 		transform: scale(1, 1);
+
+		h2 {
+			opacity:1;
+		}
+
 	}
 	&:hover:after {
   		opacity: 1;
+  		transition: all 0.4s ease;
+			transition-delay: .2s;
 	}
 	li{
 		line-height: 1.3;
 	}
+
 }
 
 }
