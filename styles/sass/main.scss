@@ -116,7 +116,7 @@ body{
 .projectsTitle{
 	/*border: 1px dotted blue;*/
 	font-size: 64px;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: center;
 	height: 100px;
 	margin-top: 50px;
@@ -125,7 +125,7 @@ body{
 .project1{
 	background-color: transparent;
 	height: 260px;
-	margin-top:150;
+	margin-top:100;
 	cursor: pointer;
 
 }
@@ -140,13 +140,20 @@ body{
 	box-shadow: 0 2px 4px rgba(0,0,0,.3);
 	position:relative;
 	display:block;
+	/*z-index: 1;*/
+		img{
 
+			height:	250px;
+			width: 250px;
+			margin: 0 auto;
+			display: block;
+		}
 
-	/*&:hover {
+	&:hover {
 			transform: translateY(-10px);
 			box-shadow: 0 12px 10px rgba(0,0,0,.2);
 
-		}*/
+		}
 }
 
 .project-Info{
@@ -208,8 +215,12 @@ body{
 					font-weight: 200;
 				}
 			}
-			h5{
+			.projectDescription{
 				text-align: justify;
+				/*font-size: 14px;
+				font-weight: 600;
+				line-height: 1.2;*/
+
 			}
 		}
 }		
