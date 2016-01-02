@@ -4,11 +4,16 @@ app.service('skrollrService', ['$document', '$q', '$rootScope', '$window',
 
         function onScriptLoad() {
             // Load client in the browser
+           
             $rootScope.$apply(function() { 
                 var s = $window.skrollr.init({
                         forceHeight: false
                     });
                 defer.resolve(s); 
+                
+                 if (s.isMobile()) {
+                        s.destroy();
+                    }
             });
         }
 

@@ -29,9 +29,8 @@ $primary-font-size: 2.7em;
 body{
 	font-family: $font-stack;
 	color: $primary-text-color;
-	background-color: $primary-bg;
 	overflow-x: hidden;
-	/*background-color: #eee;*/
+	background-color: $primary-bg;
 }
 
 .container-fluid{
@@ -72,12 +71,12 @@ body{
 
 .title{
 	/*border: 1px dotted white;*/
-	font-size: 100px;
+	font-size: 120px;
 	text-align: center;	
 	margin-bottom:0;
 	line-height: 110px;
 	padding: 0;
-	font-weight: 100;
+	font-weight: 300;
 	text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
 }
 .subtitle{
@@ -87,6 +86,15 @@ body{
 	width: 100%;
 	color: #BDD4DE;
 	padding:0;
+}
+
+.about{
+	margin-top: 520px;
+	font-size: 20px;
+	text-align: justify;
+	font-weight: 300;
+	padding:0 180px;
+	position: fixed;
 }
 
 /* //////about section ///////*/
@@ -108,15 +116,10 @@ body{
 	
 }
 
-.borderbreak{
-	border-bottom: 2px solid #fff;
-	width: 500px;
-	margin: 0 auto;
-}
 .projectsTitle{
 	/*border: 1px dotted blue;*/
 	font-size: 64px;
-	font-weight: 400;
+	font-weight: 300;
 	text-align: center;
 	height: 100px;
 	margin-top: 50px;
@@ -127,6 +130,7 @@ body{
 	height: 260px;
 	margin-top:100;
 	cursor: pointer;
+	/*border: 1px solid white;*/
 
 }
 
@@ -230,26 +234,33 @@ body{
 /* ///////// skillContent //////////*/
 .skillsDiv{
 	/*border: 2px dotted white;*/
-	height: 650px;
-	margin-top: 50px;
+	background-color: $primary-bg;
+	height: 900px;
 	.row {
 		height: 100%;
 	}
 	.skillsTitle{
-		font-size: 64px;
-		font-weight: 400;
+		margin-top: 50px;
+		font-size: 65px;
+		font-weight: 300;
 		text-align: center;
+	}
+	.skillsSummary{
+		font-size: 25px;
+		font-weight: 100;
+		text-align: center;
+		padding: 0 50;
 	}
 	.skillsItems{
 		/*border: 2px dotted yellow;*/
-		height: 550px;
+		height: 500px;
 		margin-top:50px;
 		padding:0;
 	}
 }
 
 .fullStack, .mobile, .userX, .tools{
-	height: 60%;
+	height: 350px;
 	/*border: 1px dotted red;*/
 	
 
@@ -260,6 +271,7 @@ body{
 	h2{
 		/*border: 1px dotted green;*/
 		font-size: 29px;
+		font-weight: 800;
 	}
 	height: 100%;
 	padding: 0;
@@ -271,6 +283,7 @@ body{
 		/*border: 1px dotted yellow;*/
 		list-style: none !important;
 		padding: 0 0 0 0;
+		font-weight: 400;
 		
 	}
 	
@@ -310,31 +323,20 @@ body{
 
 
 /* ///////// footer //////////*/
-.footer{
-	/*border: 4px dotted white;*/
-	height: 100%;
-	max-height: 1440px;
-	/*margin-top: 150px;*/
-}
-.footerSpace{
-	/*border: 2px dotted white;*/
-	height: 100%;
-	max-height: 650px;
-	background-color: $primary-bg;
-}
-.footerTop{
-	/*border: 4px dotted red;*/
+
+/*.footerTop{
+	border: 4px dotted white;
 	height: 650px;
 	margin-bottom: 0;
-	/*margin-top: 50px;*/
+	margin-top: 50px;
 	background: $third-bg;
 }
 .myImg{
-	/*border: 1px dotted red;*/
+	border: 1px dotted red;
 
 }
 .stoicImg{
-	/*border: 1px dotted red;*/
+	border: 1px dotted red;
 	height: 379px;
 	width: 380px;
 	border-radius: 50%;
@@ -344,7 +346,7 @@ body{
     margin-top: 25%;
 }
 .myInfo{
-	/*border: 1px dotted blue;*/
+	border: 1px dotted blue;
 	height: 380px;
     padding-right: 150px;
     text-align: justify;
@@ -352,13 +354,12 @@ body{
     font-size: 20px;
 }
 
-
+*/
 
 .footerList {
-	/*border: 2px dotted yellow;*/
-	background-color: $primary-bg;
-	height: 100px;
-	border-top: 2px solid rgba(19, 4, 43, 0.38);
+	/*border: 2px dotted white;*/
+	background-color: $projects-bg;
+	height: 75px;
 }
 .links{
 	/*border: 1px dotted red;*/
@@ -376,13 +377,9 @@ body{
 	/*text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);*/
 	}
 }
-.copyright{
-	/*border: 1px dotted blue;*/
-	height: 100%;
-}
-.copyright > p{
-	margin: 5% 25%;
-    text-align: center;
+.copyright p{
+	text-align: center;
+	margin-top: 5%;
 }
 
 
