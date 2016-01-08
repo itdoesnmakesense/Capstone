@@ -1,0 +1,118 @@
+@import "main";
+$font-stack:'Lato', sans-serif;
+$primary-text-color: #FFF;
+$secondary-text-color: #F24B4B;
+$third--text-color: #4ABFCB;
+$third-bg: darken(#BDD4DE, 30%);
+$primary-font-size: 1.1em;
+
+body{
+	background-color: $primary-bg;
+}
+
+.profilePic{
+	margin-top:100px;
+	width: 327.75px;
+}
+.title{
+	margin-top: 30px;
+	font-size:60px;
+	line-height: 80px;
+}
+
+.subtitle{
+	font-size: 20px;
+}
+
+.about{
+	font-size: 16px;
+	padding:0 30px;
+}
+
+.projects{
+	max-height: 1500px;
+}
+.projectsTitle{
+	font-size: 54px;
+}
+
+
+.skillsDiv{
+	height: 1000px;
+
+	.skillsTitle{
+		font-size: 54px;
+	}
+
+	.skillsSummary{
+		font-size: 18px;
+		text-align: justify;
+		font-weight: 300;
+	}
+
+}
+
+
+.fullStack, .mobile, .userX, .tools{
+	height: 250px;
+	.boxy{
+	font-size: 14px;
+	}
+}
+
+
+
+
+/* ///////// footer //////////*/
+
+
+.footerList {
+
+	height: 100px;
+	
+}
+.links{
+	/*border: 1px dotted red;*/
+	height: 50%;
+	display: block;
+	padding-top: 20px;
+	text-align: center;
+	 a{
+	/*border: 1px dotted white;*/
+	font-size: 14px;
+	color: white;
+	float:none;
+	margin: 2%;
+		&:hover{
+			text-decoration: none !important;
+			font-size: 15px;
+		}
+	}
+}
+
+.copyright{
+	/*border: 1px dotted blue;*/
+	height: 50%;
+}
+.copyright p{
+	margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
