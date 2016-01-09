@@ -1,4 +1,4 @@
-var app = angular.module("pWebsite", ['ngRoute','angular.filter','ui.bootstrap']);
+var app = angular.module("pWebsite", ['ngRoute','ui.bootstrap']);
 
 
 
