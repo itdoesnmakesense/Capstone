@@ -1,0 +1,23 @@
+<div class="projects col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="row item active" ng-controller="projectsCtrl">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 projectsTitle">
+				<p>Recent Projects</p>
+			</div>
+			<div class="project1 col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="p in projectContent">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project-img">
+					<img ng-src="{{p.Img}}" alt="..." height="100%" width="100%">
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project-Info">
+					<div class="row infoRow">
+						<div class="projectContent">
+							<h1>{{p.Name}}</h1>
+							<p><span class="glyphicon glyphicon-wrench"></span>
+								{{p.Skills}}
+							</p>
+							<h5 class="projectDescription">{{p.Description}}</h5>
+						</div>
+					</div>
+				</div>
+			</div> 			
+	</div>
+</div>
