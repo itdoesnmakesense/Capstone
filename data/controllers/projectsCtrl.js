@@ -5,7 +5,7 @@ app.controller("projectsCtrl",
     $scope.projectContent = [
       {
         Title: "uPick",
-        Skills: "MEAN Stack, Google Maps & Places API, Bootstrap",
+        Skills: "AngularJS, Google Maps & Places API, Bootstrap",
         Description: "uPick, a mobile-friendly web application, is a solution for my personal struggle to pick a restaurant. With the implementation of geolocation, a number of local restaurants populate on the screen. With a click of a button, a restaurant of your choice is randomly choosen.",
         Img: "data/img/uPick2.png"
       },

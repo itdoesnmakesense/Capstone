@@ -64,6 +64,25 @@ body {
 }
 */
 /* // name title // */
+.nav ul {
+  height: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent; }
+.nav li {
+  float: right; }
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 100; }
+.nav li a:hover {
+  background-color: #111; }
+
 .main {
   height: 100%;
   max-height: 700px;
@@ -119,7 +138,7 @@ body {
 .projects {
   height: 100%;
   width: 100%;
-  max-height: 800px;
+  max-height: 950px;
   /*border: 4px solid blue;*/
   position: relative;
   clear: both;
@@ -211,6 +230,27 @@ body {
       /*font-size: 14px;
       font-weight: 600;
       line-height: 1.2;*/ }
+
+.moreProjects {
+  /*border:3px solid white;*/
+  position: absolute;
+  background-color: #F24B4B;
+  height: 100px;
+  margin-top: 50px;
+  box-shadow: inset 2px 15px 40px -30px #2e2d2e; }
+
+.projectLinks {
+  /*border:2px solid white;*/
+  height: 100%; }
+  .projectLinks button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 10px; }
+  .projectLinks .buttonWar {
+    float: right; }
+  .projectLinks .buttonWeather {
+    float: left; }
 
 /* ///////// skillContent //////////*/
 .skillsDiv {
@@ -377,6 +417,9 @@ body {
   margin-top: 5%; }
 
 /* ///////// new projects img //////////*/
+.projects {
+  max-height: 800px; }
+
 .project2 {
   /*border:1px solid white;*/
   background-color: transparent;
