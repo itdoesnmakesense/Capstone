@@ -3,11 +3,10 @@ app.directive("projectFormat", function() {
 		restrict: 'E',
 		templateUrl: "data/partials/projectsFormat.html",
 		replace: true
+		
+		
 
-
-	};
-
-
+};
 
 
 
